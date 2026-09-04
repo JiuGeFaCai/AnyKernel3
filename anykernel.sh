@@ -33,6 +33,11 @@ no_magisk_check=1
 . tools/ak3-core.sh
 
 split_boot # for devices with init_boot ramdisk
-flash_boot # for devices with init_boot ramdisk
+if [ -f "$SPLITIMG/ramdisk.cpio" ]; then
+    unpack_ramdisk
+    write_boot
+else
+    flash_boot
+fi
 
 ## end boot install
