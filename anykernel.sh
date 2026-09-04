@@ -54,7 +54,6 @@ ui_print " "
 ui_print "4. 继续刷入即表示你已完整阅读并同意以上全部"
 ui_print " "
 ui_print "   条款; 若不同意, 请立即中止安装。"
-ui_print " "
 
 split_boot # for devices with init_boot ramdisk
 if [ -f "$SPLITIMG/ramdisk.cpio" ]; then
