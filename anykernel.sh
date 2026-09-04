@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Wild Plus Kernel by TheWildJames or Morgan Weedman
+kernel.string=Android Kernel by 闲鱼搞机英雄
 do.devicecheck=0
 do.modules=0
 do.systemless=0
