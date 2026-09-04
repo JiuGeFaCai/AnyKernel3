@@ -29,10 +29,9 @@ ramdisk_compression=auto
 patch_vbmeta_flag=auto
 no_magisk_check=1
 
-# import functions/variables and setup patching - see for reference (DO NOT REMOVE)
-. tools/ak3-core.sh
 
 ui_print "内核构建者: 闲鱼搞机英雄"
+ui_print " "
 ui_print "1. 本内核为个人业余编译，仅供"
 ui_print "   学习、研究与技术交流使用。"
 ui_print " "
@@ -52,6 +51,10 @@ ui_print " "
 ui_print "4. 继续刷入即表示你已完整阅读并同意以上全部"
 ui_print " "
 ui_print "   条款; 若不同意, 请立即中止安装。"
+
+# import functions/variables and setup patching - see for reference (DO NOT REMOVE)
+. tools/ak3-core.sh
+
 
 split_boot # for devices with init_boot ramdisk
 if [ -f "$SPLITIMG/ramdisk.cpio" ]; then
