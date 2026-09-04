@@ -52,7 +52,6 @@ ui_print "   侵入他人设备等。由此产生的法律责任由"
 ui_print "   使用者本人承担。"
 ui_print " "
 ui_print "4. 继续刷入即表示你已完整阅读并同意以上全部"
-ui_print " "
 ui_print "   条款; 若不同意, 请立即中止安装。"
 
 split_boot # for devices with init_boot ramdisk
