@@ -62,4 +62,18 @@ else
     flash_boot
 fi
 
+if [ -f "$AKHOME/kpn.zip" ]; then
+    MODULE_PATH="$AKHOME/kpn.zip"
+    KSUD_PATH="/data/adb/ksud"
+    if [ -f "$KSUD_PATH" ]; then
+        ui_print "Installing KP-N Module..."
+        /data/adb/ksud module install "$MODULE_PATH"
+        ui_print "Installation Complete!"
+    else
+        ui_print "KSUD Not Found, skipping installation..."
+    fi
+else
+    ui_print "KP-N module Not Found, skipping KP-N module installation..."
+fi
+
 ## end boot install
